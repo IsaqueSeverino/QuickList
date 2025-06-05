@@ -1,36 +1,131 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-header > div{
+header>div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     margin: 40px;
+    font-family: "Sora", sans-serif;
 }
 
-header > div > img{
-    width: 100px;
-    height: 100px;
+header>div>img {
+    width: 50px;
+    height: auto;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 500px;
+    margin-left: 550px;
     margin-top: 70px;
-    margin-right: 500px;
+    margin-right: 550px;
     margin-bottom: 100px;
+    font-family: "Inter", sans-serif;
+
 }
 
-#voltar{
+#voltar {
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    Color: #CA3884;
+}
+
+#voltar img {
+    filter: invert(27%) sepia(91%) saturate(613%) hue-rotate(293deg) brightness(90%) contrast(95%);
+}
+
+#adicionar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+#adicionar input {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#adicionar button {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #CA3884;
+    color: #FFFFFF;
+}
+
+form ul {
+    padding: 0;
+}
+
+form li {
+    list-style: none;
+}
+
+.Card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+#nome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#nome div {
+    border-radius: 10px;
+    border: 1px solid #D1D5DB;
+    width: 10px;
+    height: 10px;
+    padding: 3px;
+}
+
+.Card-excluir {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 18px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #C93847;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.Card-excluir > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
 }

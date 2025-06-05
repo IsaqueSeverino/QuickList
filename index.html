@@ -6,31 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickList</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div>
-            <img src="assets/Larkef x Rareblocks _ Logo #38 1.svg" alt="">
+            <img src="assets/logo.svg" alt="">
             <h1>QuickList</h1>
         </div>
     </header>
 
     <main>
         <div id="voltar">
-           <img src="assets/seta-direita.png" alt="">
-           <span>Voltar</span>
+            <img src="assets/seta-direita.png" alt="">
+            <span>Voltar</span>
         </div>
 
-        <h1>Compras da semana</h1>
+        <h1 style="margin-bottom: 50px;">Compras da semana</h1>
 
         <form action="">
-            <div>
+            <div id="adicionar">
                 <input type="text">
                 <button type="submit">Adicionar item</button>
             </div>
+
+            <ul>
+
+                <li>
+                    <div class="Card">
+                        <div id="nome">
+                            <div></div>
+                            <span>Pão de forma</span>
+                        </div>
+
+                        <img src="assets/icon-delete.svg" alt="">
+                    </div>
+                </li>
+
+            </ul>
         </form>
+
+        <div class="Card-excluir">
+            <div>
+                <img src="assets/warning-circle-filled.svg" alt="">
+                <span>O item foi removido da lista</span>
+            </div>
+
+            <img src="assets/delete-small.svg" alt="">
+        </div>
+
     </main>
 </body>
+
+<script src="script.js"></script>
 
 </html>
