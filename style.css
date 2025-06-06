@@ -53,10 +53,11 @@ main {
 }
 
 #adicionar input {
-    width: 80%;
-    height: 30px;
+    width: 79%;
+    height: 12px;
     border-radius: 5px;
     border: 1px solid black;
+    padding: 15px;
 }
 
 #adicionar button {
@@ -68,10 +69,14 @@ main {
     border: 1px solid transparent;
     background-color: #CA3884;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 form ul {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 form li {
@@ -92,19 +97,32 @@ form li {
     background-color: #FFFFFF;
 }
 
-#nome {
+.nome {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-#nome div {
+.circulo {
     border-radius: 10px;
     border: 1px solid #D1D5DB;
     width: 10px;
     height: 10px;
     padding: 3px;
+    cursor: pointer;
+}
+
+.circulo:hover {
+    background-color: black;
+}
+
+.circulo.ativo {
+   background-color: black;
+}
+
+.icon-delete {
+    cursor: pointer;
 }
 
 .Card-excluir {
@@ -123,9 +141,13 @@ form li {
     margin-top: 30px;
 }
 
-.Card-excluir > div{
+.Card-excluir-div {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 6px;
+}
+
+.img-x{
+    cursor: pointer;
 }
