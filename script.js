@@ -17,8 +17,17 @@ form.onsubmit = (e) => {
         createAt: new Date(),
     }
 
+    if(novoProduto.nome === '') {
+        alert('Por favor, preencha o campo');
+        return;
+    }
+
     addProduto(novoProduto);
 }
+
+produto.addEventListener("input", function () {
+    this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '');
+  });
 
 function addProduto(novoProduto) {
     try {
